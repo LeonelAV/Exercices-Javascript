@@ -1,0 +1,224 @@
+[1mdiff --git a/1-IntegerNumbersRange.js b/1-IntegerNumbersRange.js[m
+[1mdeleted file mode 100644[m
+[1mindex 65b4a43..0000000[m
+[1m--- a/1-IntegerNumbersRange.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,18 +0,0 @@[m
+[31m-/*Integer Numbers Range[m
+[31m-Write a function in Javascript that having two [m
+[31m-integers x1 and x2 returns all the integers between them. [m
+[31m-If x2 es lower than x1 it should return -1 */[m
+[31m-[m
+[31m-function getRange(x1, x2) {[m
+[31m-	var result = ""[m
+[31m-	if(x2<x1) {[m
+[31m-		return -1;[m
+[31m-	}[m
+[31m-	//x1 = 5[m
+[31m-	//x2 = 9[m
+[31m-	for( var i=x1+1; i<x2; i++) {[m
+[31m-		result += i + " "[m
+[31m-	}[m
+[31m-	return result;[m
+[31m-}[m
+[31m-	[m
+[1mdiff --git a/2-multiplytable.js b/2-multiplytable.js[m
+[1mdeleted file mode 100644[m
+[1mindex 81baf21..0000000[m
+[1m--- a/2-multiplytable.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,15 +0,0 @@[m
+[31m-[m
+[31m-/*Multiplications table[m
+[31m-[m
+[31m-Write a function that writes in the console the multiplication table (from 1 to 10)*/[m
+[31m-[m
+[31m-function multiplyTable(){[m
+[31m-	var res ='\n';[m
+[31m-	for(var i=1; i<=10; i++){[m
+[31m-		for(var j=1; j<=10;j++){[m
+[31m-			res += i*j + '\t';[m
+[31m-		} [m
+[31m-		res+= '\n';	[m
+[31m-	}[m
+[31m-	console.log(res)[m
+[31m-}[m
+[1mdiff --git a/3-multiplicationondemand.js b/3-multiplicationondemand.js[m
+[1mdeleted file mode 100644[m
+[1mindex ed8071b..0000000[m
+[1m--- a/3-multiplicationondemand.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,14 +0,0 @@[m
+[31m-/*Multiplications table on demand[m
+[31m-[m
+[31m-Write a function that writes in the console the multiplication [m
+[31m-table (in one column) of any number passed as parameter*/[m
+[31m-[m
+[31m-function onDemand(x){[m
+[31m-	var result=''[m
+[31m-	for(i=1; i<=x;i++){[m
+[31m-		result = x*i;[m
+[31m-		console.log(result)[m
+[31m-	}[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[1mdiff --git a/4-calculation.js b/4-calculation.js[m
+[1mdeleted file mode 100644[m
+[1mindex 9844ed3..0000000[m
+[1m--- a/4-calculation.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,29 +0,0 @@[m
+[31m-// Calculation[m
+[31m-[m
+[31m-// Write a program that writes in the console all the multiples of 23 less than 500[m
+[31m-// and at the end writes the sum of all of them[m
+[31m-[m
+[31m-// Manera 1[m
+[31m-function multiples23() {[m
+[31m-  var elements = "Elements: "[m
+[31m-  var sum = 0[m
+[31m-  for (var i=0; i<500; i++) {[m
+[31m-    if (i%23===0) {[m
+[31m-      elements += i + " "[m
+[31m-      sum += i[m
+[31m-    }[m
+[31m-  }[m
+[31m-  return elements + '\n' + 'Suma: ' + sum;[m
+[31m-}[m
+[31m-[m
+[31m-// Manera 2[m
+[31m-function multiples23() {[m
+[31m-  var elements = "Elements: "[m
+[31m-  var sum = 0[m
+[31m-  for (var i=23; i<500; i+=23) {[m
+[31m-    elements += i + " "[m
+[31m-    sum += i[m
+[31m-  }[m
+[31m-  return elements + '\n' + 'Suma: ' + sum;[m
+[31m-}[m
+[31m-	[m
+\ No newline at end of file[m
+[1mdiff --git a/5-maxfunction.js b/5-maxfunction.js[m
+[1mdeleted file mode 100644[m
+[1mindex 82afb09..0000000[m
+[1m--- a/5-maxfunction.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,14 +0,0 @@[m
+[31m-/*max() function[m
+[31m-[m
+[31m-Define a function max() that takes two numbers as arguments and [m
+[31m-returns the largest of them. Use the if-then-else [m
+[31m-construct available in Javascript.*/[m
+[31m-[m
+[31m-function max(x1, x2){[m
+[31m-	if(x1>x2){[m
+[31m-		return x1;[m
+[31m-	}[m
+[31m-	else {[m
+[31m-		return x2;[m
+[31m-	}[m
+[31m-}[m
+[1mdiff --git a/6-maxofthree.js b/6-maxofthree.js[m
+[1mdeleted file mode 100644[m
+[1mindex ea2835c..0000000[m
+[1m--- a/6-maxofthree.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,17 +0,0 @@[m
+[31m-/*maxOfThree() function[m
+[31m-[m
+[31m-Define a function maxOfThree()[m
+[31m- that takes three numbers as arguments and returns the largest of them.*/[m
+[31m-[m
+[31m- function maxOfThree(x1, x2, x3){[m
+[31m- 	if(x1>x2 && x1>x3){[m
+[31m- 		return x1;[m
+[31m- 	}[m
+[31m- 	else if(x2>x1 && x2>x3){[m
+[31m-		return x2;[m
+[31m- 	}[m
+[31m- 	else{[m
+[31m- 		return x3;[m
+[31m- 	}[m
+[31m- }[m
+[31m- [m
+\ No newline at end of file[m
+[1mdiff --git a/7-isVowel.js b/7-isVowel.js[m
+[1mdeleted file mode 100644[m
+[1mindex 45a056b..0000000[m
+[1m--- a/7-isVowel.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,50 +0,0 @@[m
+[31m-// Write a function that takes a [m
+[31m-//character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.[m
+[31m-// isVowel() function[m
+[31m-[m
+[31m-// Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.[m
+[31m-[m
+[31m-// Manera 1[m
+[31m-function isVowel( myChar ) {[m
+[31m-  var vowels = ['a', 'e', 'i', 'o', 'u'][m
+[31m-  for (var i=0; i<vowels.length; i++){[m
+[31m-    if ( myChar === vowels[i] ) {[m
+[31m-      return true[m
+[31m-    }[m
+[31m-  }[m
+[31m-  return false[m
+[31m-}[m
+[31m-[m
+[31m-isVowel("a") // true[m
+[31m-isVowel("b") // false[m
+[31m-[m
+[31m-// Manera 2[m
+[31m-function isVowel( myChar ) {[m
+[31m-  if (myChar === 'a' || myChar === 'e' || myChar === 'i' || myChar === 'o' ||   myChar === 'u') {[m
+[31m-    return true[m
+[31m-  }[m
+[31m-  else {[m
+[31m-    return false[m
+[31m-  }[m
+[31m-}[m
+[31m-[m
+[31m-// Manera 3[m
+[31m-function isVowel( myChar ) {[m
+[31m-  if ("aeiou".indexOf(myChar) !== -1) {[m
+[31m-    return true[m
+[31m-  }[m
+[31m-  else {[m
+[31m-    return false[m
+[31m-  }[m
+[31m-}[m
+[31m-[m
+[31m-// Manera 4[m
+[31m-function isVowel( myChar ) {[m
+[31m-  return ("aeiou".indexOf(myChar) !== -1)[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-// Manera 5[m
+[31m-function isVowel( myChar ) {[m
+[31m-  return /[aeiou]/.test(myChar)[m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/8-Hexadecimal.js b/8-Hexadecimal.js[m
+[1mdeleted file mode 100644[m
+[1mindex 096696b..0000000[m
+[1m--- a/8-Hexadecimal.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,13 +0,0 @@[m
+[31m-/*Hexadecimal[m
+[31m-[m
+[31m-Writes a function that convert a hexadecimal color, "blue" for[m
+[31m- example "#0000FF" in its RGB representation rgb(0,0,255)". Give[m
+[31m-  the function the name getRGB() and test it with this code */[m
+[31m-[m
+[31m-  function getRGB(hexacolor){[m
+[31m-    	var red = parseInt(hexacolor.substring(1,3), 16);[m
+[31m-    	var green = parseInt(hexacolor.substring(3, 5), 16);[m
+[31m-    	var blue = parseInt(hexacolor.substring(5,7),16);[m
+[31m-    	return "The convertion to rgb is: rgb(" + red +"," + green + "," + blue + ").";[m
+[31m-    	}[m
+[31m-  [m
+[1mdiff --git a/9-hexadecimalenhanced.js b/9-hexadecimalenhanced.js[m
+[1mdeleted file mode 100644[m
+[1mindex e69de29..0000000[m
