@@ -7,6 +7,24 @@ Define a function called calculator that receives an operation and several numbe
    calculator("multiplicacion",10,5,2) // 100
    calculator("division",10,5) // 2 */
 
+// juanma resolution
+
+function calculatorPlus () {
+  var operation = arguments[0]
+  var result = arguments[1]
+  var totalElements = arguments.length
+  var operand
+  for (var i = 2; i < totalElements; i++) {
+    operand = arguments[i]
+    if (operation === 'suma') result += operand
+    if (operation === 'resta') result -= operand
+    if (operation === 'multiplication') result *= operand
+    if (operation === 'division') result /= operand
+  }
+  return result
+}
+calculatorPlus()
+
 // function calculator ('operation', )
 
 function calculator2 () {
