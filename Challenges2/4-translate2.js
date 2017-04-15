@@ -6,14 +6,17 @@ in the following fashion {"merry":"god", "christmas":"jul",
 use it to translate your Christmas cards from English into Swedish.*/
 
 function translate(){
-	var translation =[{english:"merry",swedish:"god"},
+  var message = ''
+  var translation =[{english:"merry",swedish:"god"},
 						{english:"christmas",swedish:"jul"}, 
 						{english:"and",swedish:"och"},
 						{english:"happy",swedish:"gott"},
 						{english:"new",swedish:"nytt"},
 						{english:"year",swedish:"ar"}
-}]
-
-	for(i=0; i<translation.length; i++){
-		return translaton[i].swedish
-	}
+]
+for(i=0; i<translation.length; i++){
+  switch (arguments) {
+  	case 'happy':
+  	  
+  }
+}
