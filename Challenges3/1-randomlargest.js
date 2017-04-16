@@ -2,18 +2,17 @@
 
 Randomizes three numbers in range (0.. 100) and prints the largest one.*/
 
-function randomLargest() {
-	var random1 = Math.floor(Math.random()*100)+1
-	var random2 = Math.floor(Math.random()*100)+1
-	var random3 = Math.floor(Math.random()*100)+1
-	if (random1 > random2) {
-		return random1
-	} else if (random2 > random3){
-		return random2
-	} else {
-		return random3
-	}
-
+function randomLargest () {
+  var random1 = Math.floor(Math.random() * 100) + 1
+  var random2 = Math.floor(Math.random() * 100) + 1
+  var random3 = Math.floor(Math.random() * 100) + 1
+  if (random1 > random2) {
+    return random1
+  } else if (random2 > random3) {
+    return random2
+  } else {
+    return random3
+  }
 }
 
 randomLargest()
